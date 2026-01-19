@@ -26,3 +26,5 @@ RUN chown -R www-data:www-data /var/www/html \
 
 # Install composer dependencies
 RUN composer install --no-interaction --optimize-autoloader
+
+CMD [ "php-fpm" ]
